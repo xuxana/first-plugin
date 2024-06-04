@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { FirstPLuginPlugin } from './definitions';
+import type { FirstPluginPlugin } from './definitions';
 
-const FirstPLugin = registerPlugin<FirstPLuginPlugin>('FirstPLugin', {
-  web: () => import('./web').then(m => new m.FirstPLuginWeb()),
+const FirstPlugin = registerPlugin<FirstPluginPlugin>('FirstPlugin', {
+  web: () => import('./web').then(m => new m.FirstPluginWeb()),
 });
 
 export * from './definitions';
-export { FirstPLugin };
+export { FirstPlugin };

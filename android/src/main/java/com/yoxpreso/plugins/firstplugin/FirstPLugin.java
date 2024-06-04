@@ -2,7 +2,7 @@ package com.yoxpreso.plugins.firstplugin;
 
 import android.util.Log;
 
-public class FirstPLugin {
+public class FirstPlugin {
 
     public String echo(String value) {
         Log.i("Echo", value);

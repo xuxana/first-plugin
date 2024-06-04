@@ -6,10 +6,10 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "FirstPLugin")
-public class FirstPLuginPlugin extends Plugin {
+@CapacitorPlugin(name = "FirstPlugin")
+public class FirstPluginPlugin extends Plugin {
 
-    private FirstPLugin implementation = new FirstPLugin();
+    private FirstPlugin implementation = new FirstPlugin();
 
     @PluginMethod
     public void echo(PluginCall call) {

@@ -1,10 +1,16 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { FirstPLuginPlugin } from './definitions';
+import type { FirstPluginPlugin } from './definitions';
 
-export class FirstPLuginWeb extends WebPlugin implements FirstPLuginPlugin {
+export class FirstPluginWeb extends WebPlugin implements FirstPluginPlugin {
   async echo(options: { value: string }): Promise<{ value: string }> {
     console.log('ECHO', options);
     return options;
   }
+
+  async testPluginMethod(options: { msg: string }): Promise<{ value: string }> {
+    console.warn('MyPluginMethod', options);
+    return { value: options.msg };
+  }
+
 }
