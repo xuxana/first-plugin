@@ -19,4 +19,14 @@ public class FirstPluginPlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void testPluginMethod(PluginCall call) {
+        String value = call.getString("msg");
+
+        JSObject ret = new JSObject();
+        ret.put("value", value);
+        call.resolve(ret);
+    }
+
 }
